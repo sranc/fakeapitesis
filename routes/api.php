@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('images', [ImageController::class, 'index']);
 Route::get('images/{image}', [ImageController::class, 'show']);
+Route::get('images/{image}/imageRight', [ImageController::class, 'imageRight']);
 Route::post('images', [ImageController::class, 'store']);
 Route::put('images/{image}', [ImageController::class, 'update']);
 Route::delete('images/{image}', [ImageController::class, 'delete']);
